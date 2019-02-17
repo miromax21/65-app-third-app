@@ -32,7 +32,6 @@
 		E7ED85472211CA8D007426D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		E7ED854E2211CB86007426D8 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7ED85502211CB8A007426D8 /* libSwiftyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSwiftyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7ED85522211D637007426D8 /* get.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = get.json; sourceTree = "<group>"; };
 		ED92356FC4384C3F8C9CE9B7 /* Pods-65-app-third-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-65-app-third-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-65-app-third-app/Pods-65-app-third-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				E7ED85472211CA8D007426D8 /* main.swift */,
-				E7ED85522211D637007426D8 /* get.json */,
 			);
 			path = "65-app-third-app";
 			sourceTree = "<group>";
