@@ -17,7 +17,7 @@ public struct GithubUserProjectData {
     public let projectId : Int
 }
 
-public class Datas {
+public class Data {
     static var projects = [GithubUserProjectData]()
 }
 protocol JSONDecdable {
@@ -47,7 +47,7 @@ class DataProvider{
                         guard let user = GithubUserProjectData(JSON: swiftyJson) else { return }
                         githubUsers.append(user)
                     }
-                    Datas.projects = githubUsers
+                    Data.projects = githubUsers
                     DispatchQueue.main.async {
                         completion()
                     }
@@ -61,7 +61,7 @@ class App {
     func getTheUserProjectsInfo(username: String){
         let url = "\(AppConstant.githubURL)/users/\(username)/repos"
         DataProvider.getUserAllRepositoryData(url: url) {
-            for project in Datas.projects{
+            for project in Data.projects{
               print(project.projectName)
             }
         }
