@@ -9,8 +9,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-enum AppConstant {
-    static let githubURL = "https://api.github.com"
+enum APP_CONSTANTS {
+    static let GITHUB_URL = "https://api.github.com"
 }
 public struct GithubUserProjectData {
     public let projectName : String
@@ -59,7 +59,7 @@ class DataProvider{
 
 class App {
     func getTheUserProjectsInfo(username: String){
-        let url = "\(AppConstant.githubURL)/users/\(username)/repos"
+        let url = "\(APP_CONSTANTS.GITHUB_URL)/users/\(username)/repos"
         DataProvider.getUserAllRepositoryData(url: url) {
             for project in Data.projects{
               print(project.projectName)

@@ -1,0 +1,6 @@
+module Pods_65_app_third_app {
+  umbrella header "Pods-65-app-third-app-umbrella.h"
+
+  export *
+  module * { export * }
+}
