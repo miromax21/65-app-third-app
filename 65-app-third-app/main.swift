@@ -39,6 +39,7 @@ class DataProvider{
             Alamofire.request(url).responseJSON { (responseData) -> Void in
                 if responseData.result.isFailure {
                     print(responseData.result.error?.localizedDescription ?? "for some reason, data could not be obtained")
+                    completion()
                 }
                 if((responseData.result.value) != nil) {
                     guard let swiftyJsonArray = responseData.result.value as? [[String : Any]] else {return}
